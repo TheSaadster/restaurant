@@ -1,0 +1,1 @@
+console.log("This is a console.log statement from /src/index.js lol")

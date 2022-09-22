@@ -1,6 +1,6 @@
 import { initialPageLoad } from './initial-page-load.js';
 import { menu } from './menu.js';
-
+import './styles.css';
 initialPageLoad();
 
 let tabSwitchingModule = (function(){

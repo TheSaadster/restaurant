@@ -1,3 +1,13 @@
-import * as module from './initial-page-load.js'
-console.log("This is a console.log statement from /src/index.js lol")
-module.initialPageLoad();
+import { initialPageLoad } from './initial-page-load.js';
+import { menu } from './menu.js';
+
+initialPageLoad();
+
+let tabSwitchingModule = (function(){
+    const homeTab = document.querySelector(".home");
+    homeTab.addEventListener("click", initialPageLoad);
+
+    const menuTab = document.querySelector(".menu");
+    menuTab.addEventListener("click", menu);
+
+})();

@@ -1,5 +1,7 @@
 export function initialPageLoad() {
-    const contentDiv = document.querySelector("#content"); 
+    const contentDiv = document.querySelector("#content");
+    contentDiv.replaceChildren();
+ 
     const heading = document.createElement("h1");
     heading.textContent = "Welcome to Saad's Restaurant!";
     heading.classList.add("landing-title");
